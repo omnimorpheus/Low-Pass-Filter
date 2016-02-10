@@ -1,0 +1,4 @@
+verilog work "./ram_image.v"
+verilog work "vga.v"
+verilog work "keyb.v"
+verilog work "mylab4.v"

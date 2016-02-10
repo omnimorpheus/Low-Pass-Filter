@@ -1,0 +1,582 @@
+Release 9.2i Map J.36
+Xilinx Mapping Report File for Design 'mylab4'
+
+Design Information
+------------------
+Command Line   : C:\Xilinx92i\bin\nt\map.exe -ise C:/Users/Syed/Google
+Drive/fpga fall15/Lab5/new_6dec/new/new.ise -intstyle ise -p xc2vp30-ff896-7 -cm
+area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf 
+Target Device  : xc2vp30
+Target Package : ff896
+Target Speed   : -7
+Mapper Version : virtex2p -- $Revision: 1.36 $
+Mapped Date    : Mon Dec 07 13:16:39 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Logic Utilization:
+  Number of Slice Flip Flops:         120 out of  27,392    1%
+  Number of 4 input LUTs:             385 out of  27,392    1%
+Logic Distribution:
+  Number of occupied Slices:          234 out of  13,696    1%
+  Number of Slices containing only related logic:     234 out of     234  100%
+  Number of Slices containing unrelated logic:          0 out of     234    0%
+        *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:            411 out of  27,392    1%
+  Number used as logic:               385
+  Number used as a route-thru:         25
+  Number used as Shift registers:       1
+
+  Number of bonded IOBs:               33 out of     556    5%
+    IOB Flip Flops:                     1
+  Number of PPC405s:                   0 out of       2    0%
+  Number of Block RAMs:                16 out of     136   11%
+  Number of MULT18X18s:                 1 out of     136    1%
+  Number of GCLKs:                      2 out of      16   12%
+  Number of GTs:                        0 out of       8    0%
+  Number of GT10s:                      0 out of       0    0%
+
+Total equivalent gate count for design:  1,056,185
+Additional JTAG gate count for IOBs:  1,584
+Peak Memory Usage:  268 MB
+Total REAL time to MAP completion:  5 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Pack:266 - The function generator vga_unit/Msub_yz_xor<7>111 failed to
+   merge with F5 multiplexer vga_unit/Msub_yz_xor<7>12_f5.  There is a conflict
+   for the FXMUX.  The design will exhibit suboptimal timing.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:MapLib:863 - The following Virtex BUFG(s) is/are being retargeted to
+   Virtex2 BUFGMUX(s) with input tied to I0 and Select pin tied to constant 0:
+   BUFGP symbol "clk_BUFGP" (output signal=clk_BUFGP),
+   BUFGP symbol "kb_clock_BUFGP" (output signal=kb_clock_BUFGP)
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs in the
+   schematic.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 144 block(s) removed
+  39 block(s) optimized away
+ 160 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "vga_unit/image2/N427" is sourceless and has been removed.
+The signal "vga_unit/image2/N431" is sourceless and has been removed.
+The signal "vga_unit/image2/N435" is sourceless and has been removed.
+The signal "vga_unit/image2/N426" is sourceless and has been removed.
+The signal "vga_unit/image2/N430" is sourceless and has been removed.
+The signal "vga_unit/image2/N425" is sourceless and has been removed.
+The signal "vga_unit/image2/N429" is sourceless and has been removed.
+The signal "vga_unit/image2/N433" is sourceless and has been removed.
+The signal "vga_unit/image2/N2457" is sourceless and has been removed.
+The signal "vga_unit/image2/N2518" is sourceless and has been removed.
+The signal "vga_unit/image2/N2955" is sourceless and has been removed.
+The signal "vga_unit/image2/N2959" is sourceless and has been removed.
+The signal "vga_unit/image2/N2963" is sourceless and has been removed.
+The signal "vga_unit/image2/N2954" is sourceless and has been removed.
+The signal "vga_unit/image2/N2958" is sourceless and has been removed.
+The signal "vga_unit/image2/N2953" is sourceless and has been removed.
+The signal "vga_unit/image2/N2957" is sourceless and has been removed.
+The signal "vga_unit/image2/N2961" is sourceless and has been removed.
+The signal "vga_unit/image2/N4985" is sourceless and has been removed.
+The signal "vga_unit/image2/N5046" is sourceless and has been removed.
+The signal "vga_unit/image2/N5483" is sourceless and has been removed.
+The signal "vga_unit/image2/N5487" is sourceless and has been removed.
+The signal "vga_unit/image2/N5491" is sourceless and has been removed.
+The signal "vga_unit/image2/N5482" is sourceless and has been removed.
+The signal "vga_unit/image2/N5486" is sourceless and has been removed.
+The signal "vga_unit/image2/N5481" is sourceless and has been removed.
+The signal "vga_unit/image2/N5485" is sourceless and has been removed.
+The signal "vga_unit/image2/N5489" is sourceless and has been removed.
+The signal "vga_unit/image2/N7513" is sourceless and has been removed.
+The signal "vga_unit/image2/N7574" is sourceless and has been removed.
+The signal "vga_unit/image2/N8011" is sourceless and has been removed.
+The signal "vga_unit/image2/N8015" is sourceless and has been removed.
+The signal "vga_unit/image2/N8019" is sourceless and has been removed.
+The signal "vga_unit/image2/N8010" is sourceless and has been removed.
+The signal "vga_unit/image2/N8014" is sourceless and has been removed.
+The signal "vga_unit/image2/N8009" is sourceless and has been removed.
+The signal "vga_unit/image2/N8013" is sourceless and has been removed.
+The signal "vga_unit/image2/N8017" is sourceless and has been removed.
+The signal "vga_unit/image2/N10041" is sourceless and has been removed.
+The signal "vga_unit/image2/N10102" is sourceless and has been removed.
+The signal "vga_unit/image2/N10539" is sourceless and has been removed.
+The signal "vga_unit/image2/N10543" is sourceless and has been removed.
+The signal "vga_unit/image2/N10547" is sourceless and has been removed.
+The signal "vga_unit/image2/N10538" is sourceless and has been removed.
+The signal "vga_unit/image2/N10542" is sourceless and has been removed.
+The signal "vga_unit/image2/N10537" is sourceless and has been removed.
+The signal "vga_unit/image2/N10541" is sourceless and has been removed.
+The signal "vga_unit/image2/N10545" is sourceless and has been removed.
+The signal "vga_unit/image2/N12569" is sourceless and has been removed.
+The signal "vga_unit/image2/N12630" is sourceless and has been removed.
+The signal "vga_unit/image2/N13067" is sourceless and has been removed.
+The signal "vga_unit/image2/N13071" is sourceless and has been removed.
+The signal "vga_unit/image2/N13075" is sourceless and has been removed.
+The signal "vga_unit/image2/N13066" is sourceless and has been removed.
+The signal "vga_unit/image2/N13070" is sourceless and has been removed.
+The signal "vga_unit/image2/N13065" is sourceless and has been removed.
+The signal "vga_unit/image2/N13069" is sourceless and has been removed.
+The signal "vga_unit/image2/N13073" is sourceless and has been removed.
+The signal "vga_unit/image2/N15097" is sourceless and has been removed.
+The signal "vga_unit/image2/N15158" is sourceless and has been removed.
+The signal "vga_unit/image2/N15595" is sourceless and has been removed.
+The signal "vga_unit/image2/N15599" is sourceless and has been removed.
+The signal "vga_unit/image2/N15603" is sourceless and has been removed.
+The signal "vga_unit/image2/N15594" is sourceless and has been removed.
+The signal "vga_unit/image2/N15598" is sourceless and has been removed.
+The signal "vga_unit/image2/N15593" is sourceless and has been removed.
+The signal "vga_unit/image2/N15597" is sourceless and has been removed.
+The signal "vga_unit/image2/N15601" is sourceless and has been removed.
+The signal "vga_unit/image2/N17625" is sourceless and has been removed.
+The signal "vga_unit/image2/N17686" is sourceless and has been removed.
+The signal "vga_unit/image2/N18123" is sourceless and has been removed.
+The signal "vga_unit/image2/N18127" is sourceless and has been removed.
+The signal "vga_unit/image2/N18131" is sourceless and has been removed.
+The signal "vga_unit/image2/N18122" is sourceless and has been removed.
+The signal "vga_unit/image2/N18126" is sourceless and has been removed.
+The signal "vga_unit/image2/N18121" is sourceless and has been removed.
+The signal "vga_unit/image2/N18125" is sourceless and has been removed.
+The signal "vga_unit/image2/N18129" is sourceless and has been removed.
+The signal "vga_unit/image2/N20153" is sourceless and has been removed.
+The signal "vga_unit/image2/N20214" is sourceless and has been removed.
+The signal "vga_unit/image1/N427" is sourceless and has been removed.
+The signal "vga_unit/image1/N431" is sourceless and has been removed.
+The signal "vga_unit/image1/N435" is sourceless and has been removed.
+The signal "vga_unit/image1/N426" is sourceless and has been removed.
+The signal "vga_unit/image1/N430" is sourceless and has been removed.
+The signal "vga_unit/image1/N425" is sourceless and has been removed.
+The signal "vga_unit/image1/N429" is sourceless and has been removed.
+The signal "vga_unit/image1/N433" is sourceless and has been removed.
+The signal "vga_unit/image1/N2457" is sourceless and has been removed.
+The signal "vga_unit/image1/N2518" is sourceless and has been removed.
+The signal "vga_unit/image1/N2955" is sourceless and has been removed.
+The signal "vga_unit/image1/N2959" is sourceless and has been removed.
+The signal "vga_unit/image1/N2963" is sourceless and has been removed.
+The signal "vga_unit/image1/N2954" is sourceless and has been removed.
+The signal "vga_unit/image1/N2958" is sourceless and has been removed.
+The signal "vga_unit/image1/N2953" is sourceless and has been removed.
+The signal "vga_unit/image1/N2957" is sourceless and has been removed.
+The signal "vga_unit/image1/N2961" is sourceless and has been removed.
+The signal "vga_unit/image1/N4985" is sourceless and has been removed.
+The signal "vga_unit/image1/N5046" is sourceless and has been removed.
+The signal "vga_unit/image1/N5483" is sourceless and has been removed.
+The signal "vga_unit/image1/N5487" is sourceless and has been removed.
+The signal "vga_unit/image1/N5491" is sourceless and has been removed.
+The signal "vga_unit/image1/N5482" is sourceless and has been removed.
+The signal "vga_unit/image1/N5486" is sourceless and has been removed.
+The signal "vga_unit/image1/N5481" is sourceless and has been removed.
+The signal "vga_unit/image1/N5485" is sourceless and has been removed.
+The signal "vga_unit/image1/N5489" is sourceless and has been removed.
+The signal "vga_unit/image1/N7513" is sourceless and has been removed.
+The signal "vga_unit/image1/N7574" is sourceless and has been removed.
+The signal "vga_unit/image1/N8011" is sourceless and has been removed.
+The signal "vga_unit/image1/N8015" is sourceless and has been removed.
+The signal "vga_unit/image1/N8019" is sourceless and has been removed.
+The signal "vga_unit/image1/N8010" is sourceless and has been removed.
+The signal "vga_unit/image1/N8014" is sourceless and has been removed.
+The signal "vga_unit/image1/N8009" is sourceless and has been removed.
+The signal "vga_unit/image1/N8013" is sourceless and has been removed.
+The signal "vga_unit/image1/N8017" is sourceless and has been removed.
+The signal "vga_unit/image1/N10041" is sourceless and has been removed.
+The signal "vga_unit/image1/N10102" is sourceless and has been removed.
+The signal "vga_unit/image1/N10539" is sourceless and has been removed.
+The signal "vga_unit/image1/N10543" is sourceless and has been removed.
+The signal "vga_unit/image1/N10547" is sourceless and has been removed.
+The signal "vga_unit/image1/N10538" is sourceless and has been removed.
+The signal "vga_unit/image1/N10542" is sourceless and has been removed.
+The signal "vga_unit/image1/N10537" is sourceless and has been removed.
+The signal "vga_unit/image1/N10541" is sourceless and has been removed.
+The signal "vga_unit/image1/N10545" is sourceless and has been removed.
+The signal "vga_unit/image1/N12569" is sourceless and has been removed.
+The signal "vga_unit/image1/N12630" is sourceless and has been removed.
+The signal "vga_unit/image1/N13067" is sourceless and has been removed.
+The signal "vga_unit/image1/N13071" is sourceless and has been removed.
+The signal "vga_unit/image1/N13075" is sourceless and has been removed.
+The signal "vga_unit/image1/N13066" is sourceless and has been removed.
+The signal "vga_unit/image1/N13070" is sourceless and has been removed.
+The signal "vga_unit/image1/N13065" is sourceless and has been removed.
+The signal "vga_unit/image1/N13069" is sourceless and has been removed.
+The signal "vga_unit/image1/N13073" is sourceless and has been removed.
+The signal "vga_unit/image1/N15097" is sourceless and has been removed.
+The signal "vga_unit/image1/N15158" is sourceless and has been removed.
+The signal "vga_unit/image1/N15595" is sourceless and has been removed.
+The signal "vga_unit/image1/N15599" is sourceless and has been removed.
+The signal "vga_unit/image1/N15603" is sourceless and has been removed.
+The signal "vga_unit/image1/N15594" is sourceless and has been removed.
+The signal "vga_unit/image1/N15598" is sourceless and has been removed.
+The signal "vga_unit/image1/N15593" is sourceless and has been removed.
+The signal "vga_unit/image1/N15597" is sourceless and has been removed.
+The signal "vga_unit/image1/N15601" is sourceless and has been removed.
+The signal "vga_unit/image1/N17625" is sourceless and has been removed.
+The signal "vga_unit/image1/N17686" is sourceless and has been removed.
+The signal "vga_unit/image1/N18123" is sourceless and has been removed.
+The signal "vga_unit/image1/N18127" is sourceless and has been removed.
+The signal "vga_unit/image1/N18131" is sourceless and has been removed.
+The signal "vga_unit/image1/N18122" is sourceless and has been removed.
+The signal "vga_unit/image1/N18126" is sourceless and has been removed.
+The signal "vga_unit/image1/N18121" is sourceless and has been removed.
+The signal "vga_unit/image1/N18125" is sourceless and has been removed.
+The signal "vga_unit/image1/N18129" is sourceless and has been removed.
+The signal "vga_unit/image1/N20153" is sourceless and has been removed.
+The signal "vga_unit/image1/N20214" is sourceless and has been removed.
+Unused block "vga_unit/image1/B100" () removed.
+Unused block "vga_unit/image1/B15" () removed.
+Unused block "vga_unit/image1/B179" () removed.
+Unused block "vga_unit/image1/B185" () removed.
+Unused block "vga_unit/image1/B264" () removed.
+Unused block "vga_unit/image1/B270" () removed.
+Unused block "vga_unit/image1/B349" () removed.
+Unused block "vga_unit/image1/B355" () removed.
+Unused block "vga_unit/image1/B434" () removed.
+Unused block "vga_unit/image1/B440" () removed.
+Unused block "vga_unit/image1/B519" () removed.
+Unused block "vga_unit/image1/B525" () removed.
+Unused block "vga_unit/image1/B604" () removed.
+Unused block "vga_unit/image1/B610" () removed.
+Unused block "vga_unit/image1/B9" () removed.
+Unused block "vga_unit/image1/B94" () removed.
+Unused block "vga_unit/image1/BU135" (ROM) removed.
+Unused block "vga_unit/image1/BU145" (ROM) removed.
+Unused block "vga_unit/image1/BU162" (ROM) removed.
+Unused block "vga_unit/image1/BU172" (ROM) removed.
+Unused block "vga_unit/image1/BU220" (ROM) removed.
+Unused block "vga_unit/image1/BU230" (ROM) removed.
+Unused block "vga_unit/image1/BU247" (ROM) removed.
+Unused block "vga_unit/image1/BU257" (ROM) removed.
+Unused block "vga_unit/image1/BU305" (ROM) removed.
+Unused block "vga_unit/image1/BU315" (ROM) removed.
+Unused block "vga_unit/image1/BU332" (ROM) removed.
+Unused block "vga_unit/image1/BU342" (ROM) removed.
+Unused block "vga_unit/image1/BU390" (ROM) removed.
+Unused block "vga_unit/image1/BU400" (ROM) removed.
+Unused block "vga_unit/image1/BU417" (ROM) removed.
+Unused block "vga_unit/image1/BU427" (ROM) removed.
+Unused block "vga_unit/image1/BU475" (ROM) removed.
+Unused block "vga_unit/image1/BU485" (ROM) removed.
+Unused block "vga_unit/image1/BU50" (ROM) removed.
+Unused block "vga_unit/image1/BU502" (ROM) removed.
+Unused block "vga_unit/image1/BU512" (ROM) removed.
+Unused block "vga_unit/image1/BU560" (ROM) removed.
+Unused block "vga_unit/image1/BU570" (ROM) removed.
+Unused block "vga_unit/image1/BU587" (ROM) removed.
+Unused block "vga_unit/image1/BU597" (ROM) removed.
+Unused block "vga_unit/image1/BU60" (ROM) removed.
+Unused block "vga_unit/image1/BU645" (ROM) removed.
+Unused block "vga_unit/image1/BU655" (ROM) removed.
+Unused block "vga_unit/image1/BU672" (ROM) removed.
+Unused block "vga_unit/image1/BU682" (ROM) removed.
+Unused block "vga_unit/image1/BU77" (ROM) removed.
+Unused block "vga_unit/image1/BU87" (ROM) removed.
+Unused block "vga_unit/image2/B100" () removed.
+Unused block "vga_unit/image2/B15" () removed.
+Unused block "vga_unit/image2/B179" () removed.
+Unused block "vga_unit/image2/B185" () removed.
+Unused block "vga_unit/image2/B264" () removed.
+Unused block "vga_unit/image2/B270" () removed.
+Unused block "vga_unit/image2/B349" () removed.
+Unused block "vga_unit/image2/B355" () removed.
+Unused block "vga_unit/image2/B434" () removed.
+Unused block "vga_unit/image2/B440" () removed.
+Unused block "vga_unit/image2/B519" () removed.
+Unused block "vga_unit/image2/B525" () removed.
+Unused block "vga_unit/image2/B604" () removed.
+Unused block "vga_unit/image2/B610" () removed.
+Unused block "vga_unit/image2/B9" () removed.
+Unused block "vga_unit/image2/B94" () removed.
+Unused block "vga_unit/image2/BU135" (ROM) removed.
+Unused block "vga_unit/image2/BU145" (ROM) removed.
+Unused block "vga_unit/image2/BU162" (ROM) removed.
+Unused block "vga_unit/image2/BU172" (ROM) removed.
+Unused block "vga_unit/image2/BU220" (ROM) removed.
+Unused block "vga_unit/image2/BU230" (ROM) removed.
+Unused block "vga_unit/image2/BU247" (ROM) removed.
+Unused block "vga_unit/image2/BU257" (ROM) removed.
+Unused block "vga_unit/image2/BU305" (ROM) removed.
+Unused block "vga_unit/image2/BU315" (ROM) removed.
+Unused block "vga_unit/image2/BU332" (ROM) removed.
+Unused block "vga_unit/image2/BU342" (ROM) removed.
+Unused block "vga_unit/image2/BU390" (ROM) removed.
+Unused block "vga_unit/image2/BU400" (ROM) removed.
+Unused block "vga_unit/image2/BU417" (ROM) removed.
+Unused block "vga_unit/image2/BU427" (ROM) removed.
+Unused block "vga_unit/image2/BU475" (ROM) removed.
+Unused block "vga_unit/image2/BU485" (ROM) removed.
+Unused block "vga_unit/image2/BU50" (ROM) removed.
+Unused block "vga_unit/image2/BU502" (ROM) removed.
+Unused block "vga_unit/image2/BU512" (ROM) removed.
+Unused block "vga_unit/image2/BU560" (ROM) removed.
+Unused block "vga_unit/image2/BU570" (ROM) removed.
+Unused block "vga_unit/image2/BU587" (ROM) removed.
+Unused block "vga_unit/image2/BU597" (ROM) removed.
+Unused block "vga_unit/image2/BU60" (ROM) removed.
+Unused block "vga_unit/image2/BU645" (ROM) removed.
+Unused block "vga_unit/image2/BU655" (ROM) removed.
+Unused block "vga_unit/image2/BU672" (ROM) removed.
+Unused block "vga_unit/image2/BU682" (ROM) removed.
+Unused block "vga_unit/image2/BU77" (ROM) removed.
+Unused block "vga_unit/image2/BU87" (ROM) removed.
+Unused block "vga_unit/image1/B12" () removed.
+Unused block "vga_unit/image1/B182" () removed.
+Unused block "vga_unit/image1/B267" () removed.
+Unused block "vga_unit/image1/B352" () removed.
+Unused block "vga_unit/image1/B437" () removed.
+Unused block "vga_unit/image1/B522" () removed.
+Unused block "vga_unit/image1/B607" () removed.
+Unused block "vga_unit/image1/B97" () removed.
+Unused block "vga_unit/image1/BU140" (ROM) removed.
+Unused block "vga_unit/image1/BU167" (ROM) removed.
+Unused block "vga_unit/image1/BU225" (ROM) removed.
+Unused block "vga_unit/image1/BU252" (ROM) removed.
+Unused block "vga_unit/image1/BU310" (ROM) removed.
+Unused block "vga_unit/image1/BU337" (ROM) removed.
+Unused block "vga_unit/image1/BU395" (ROM) removed.
+Unused block "vga_unit/image1/BU422" (ROM) removed.
+Unused block "vga_unit/image1/BU480" (ROM) removed.
+Unused block "vga_unit/image1/BU507" (ROM) removed.
+Unused block "vga_unit/image1/BU55" (ROM) removed.
+Unused block "vga_unit/image1/BU565" (ROM) removed.
+Unused block "vga_unit/image1/BU592" (ROM) removed.
+Unused block "vga_unit/image1/BU650" (ROM) removed.
+Unused block "vga_unit/image1/BU677" (ROM) removed.
+Unused block "vga_unit/image1/BU82" (ROM) removed.
+Unused block "vga_unit/image2/B12" () removed.
+Unused block "vga_unit/image2/B182" () removed.
+Unused block "vga_unit/image2/B267" () removed.
+Unused block "vga_unit/image2/B352" () removed.
+Unused block "vga_unit/image2/B437" () removed.
+Unused block "vga_unit/image2/B522" () removed.
+Unused block "vga_unit/image2/B607" () removed.
+Unused block "vga_unit/image2/B97" () removed.
+Unused block "vga_unit/image2/BU140" (ROM) removed.
+Unused block "vga_unit/image2/BU167" (ROM) removed.
+Unused block "vga_unit/image2/BU225" (ROM) removed.
+Unused block "vga_unit/image2/BU252" (ROM) removed.
+Unused block "vga_unit/image2/BU310" (ROM) removed.
+Unused block "vga_unit/image2/BU337" (ROM) removed.
+Unused block "vga_unit/image2/BU395" (ROM) removed.
+Unused block "vga_unit/image2/BU422" (ROM) removed.
+Unused block "vga_unit/image2/BU480" (ROM) removed.
+Unused block "vga_unit/image2/BU507" (ROM) removed.
+Unused block "vga_unit/image2/BU55" (ROM) removed.
+Unused block "vga_unit/image2/BU565" (ROM) removed.
+Unused block "vga_unit/image2/BU592" (ROM) removed.
+Unused block "vga_unit/image2/BU650" (ROM) removed.
+Unused block "vga_unit/image2/BU677" (ROM) removed.
+Unused block "vga_unit/image2/BU82" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+FDE 		vga_unit/image1/BU104
+   optimized to 0
+FDE 		vga_unit/image1/BU107
+   optimized to 0
+FDE 		vga_unit/image1/BU189
+   optimized to 0
+FDE 		vga_unit/image1/BU19
+   optimized to 0
+FDE 		vga_unit/image1/BU192
+   optimized to 0
+FDE 		vga_unit/image1/BU22
+   optimized to 0
+FDE 		vga_unit/image1/BU274
+   optimized to 0
+FDE 		vga_unit/image1/BU277
+   optimized to 0
+FDE 		vga_unit/image1/BU359
+   optimized to 0
+FDE 		vga_unit/image1/BU362
+   optimized to 0
+FDE 		vga_unit/image1/BU444
+   optimized to 0
+FDE 		vga_unit/image1/BU447
+   optimized to 0
+FDE 		vga_unit/image1/BU529
+   optimized to 0
+FDE 		vga_unit/image1/BU532
+   optimized to 0
+FDE 		vga_unit/image1/BU614
+   optimized to 0
+FDE 		vga_unit/image1/BU617
+   optimized to 0
+GND 		vga_unit/image1/GND
+VCC 		vga_unit/image1/VCC
+FDE 		vga_unit/image2/BU104
+   optimized to 0
+FDE 		vga_unit/image2/BU107
+   optimized to 0
+FDE 		vga_unit/image2/BU189
+   optimized to 0
+FDE 		vga_unit/image2/BU19
+   optimized to 0
+FDE 		vga_unit/image2/BU192
+   optimized to 0
+FDE 		vga_unit/image2/BU22
+   optimized to 0
+FDE 		vga_unit/image2/BU274
+   optimized to 0
+FDE 		vga_unit/image2/BU277
+   optimized to 0
+FDE 		vga_unit/image2/BU359
+   optimized to 0
+FDE 		vga_unit/image2/BU362
+   optimized to 0
+FDE 		vga_unit/image2/BU444
+   optimized to 0
+FDE 		vga_unit/image2/BU447
+   optimized to 0
+FDE 		vga_unit/image2/BU529
+   optimized to 0
+FDE 		vga_unit/image2/BU532
+   optimized to 0
+FDE 		vga_unit/image2/BU614
+   optimized to 0
+FDE 		vga_unit/image2/BU617
+   optimized to 0
+GND 		vga_unit/image2/GND
+VCC 		vga_unit/image2/VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type    | Direction | IO Standard | Drive    | Slew | Reg (s)  | Resistor | IOB   |
+|                                    |         |           |             | Strength | Rate |          |          | Delay |
++------------------------------------------------------------------------------------------------------------------------+
+| bl<0>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| bl<1>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| bl<2>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| bl<3>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| bl<4>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| bl<5>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| bl<6>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| bl<7>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| blnk                               | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| clk                                | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| cs                                 | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| data                               | IOB     | INPUT     | LVCMOS25    |          |      | INFF1    |          | IFD   |
+| gr<0>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| gr<1>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| gr<2>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| gr<3>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| gr<4>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| gr<5>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| gr<6>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| gr<7>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| hs                                 | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| kb_clock                           | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| pclk                               | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| rd<0>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| rd<1>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| rd<2>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| rd<3>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| rd<4>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| rd<5>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| rd<6>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| rd<7>                              | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
+| reset                              | IOB     | INPUT     | LVCMOS25    |          |      |          |          |       |
+| vs                                 | IOB     | OUTPUT    | LVCMOS25    | 12       | SLOW |          |          |       |
++------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.

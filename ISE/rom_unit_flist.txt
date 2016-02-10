@@ -1,0 +1,13 @@
+# Output products list for <rom_unit>
+rom_unit.asy
+rom_unit.mif
+rom_unit.ngc
+rom_unit.sym
+rom_unit.v
+rom_unit.veo
+rom_unit.vhd
+rom_unit.vho
+rom_unit.xco
+rom_unit_blk_mem_gen_v2_4_xst_1_vhdl.prj
+rom_unit_flist.txt
+rom_unit_xmdf.tcl

@@ -1,0 +1,104 @@
+--------------------------------------------------------------------------------
+Release 9.2i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx92i\bin\nt\trce.exe -ise
+C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise -intstyle ise
+-e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+
+Design file:              mylab4.ncd
+Physical constraint file: mylab4.pcf
+Device,package,speed:     xc2vp30,ff896,-7 (PRODUCTION 1.93 2007-04-13)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock kb_clock
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+data        |   -0.172(F)|    2.757(F)|kb_clock_BUFGP    |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+bl<0>       |    6.797(R)|clk_BUFGP         |   0.000|
+bl<1>       |    6.469(R)|clk_BUFGP         |   0.000|
+bl<2>       |    6.028(R)|clk_BUFGP         |   0.000|
+bl<3>       |    8.017(R)|clk_BUFGP         |   0.000|
+bl<4>       |    5.940(R)|clk_BUFGP         |   0.000|
+bl<5>       |    7.562(R)|clk_BUFGP         |   0.000|
+bl<6>       |    6.247(R)|clk_BUFGP         |   0.000|
+bl<7>       |    7.678(R)|clk_BUFGP         |   0.000|
+gr<0>       |    6.487(R)|clk_BUFGP         |   0.000|
+gr<1>       |    6.611(R)|clk_BUFGP         |   0.000|
+gr<2>       |    7.396(R)|clk_BUFGP         |   0.000|
+gr<3>       |    6.501(R)|clk_BUFGP         |   0.000|
+gr<4>       |    6.509(R)|clk_BUFGP         |   0.000|
+gr<5>       |    6.400(R)|clk_BUFGP         |   0.000|
+gr<6>       |    6.473(R)|clk_BUFGP         |   0.000|
+gr<7>       |    6.723(R)|clk_BUFGP         |   0.000|
+hs          |    7.353(R)|clk_BUFGP         |   0.000|
+rd<0>       |    6.926(R)|clk_BUFGP         |   0.000|
+rd<1>       |    6.825(R)|clk_BUFGP         |   0.000|
+rd<2>       |    8.001(R)|clk_BUFGP         |   0.000|
+rd<3>       |    6.510(R)|clk_BUFGP         |   0.000|
+rd<4>       |    6.134(R)|clk_BUFGP         |   0.000|
+rd<5>       |    6.471(R)|clk_BUFGP         |   0.000|
+rd<6>       |    6.291(R)|clk_BUFGP         |   0.000|
+rd<7>       |    6.519(R)|clk_BUFGP         |   0.000|
+vs          |    7.906(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    6.424|         |         |         |
+kb_clock       |         |    3.559|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock kb_clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.674|         |
+kb_clock       |         |         |         |    2.682|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Dec 07 13:17:10 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 184 MB
+
+
+

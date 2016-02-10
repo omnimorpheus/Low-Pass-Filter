@@ -1,0 +1,12 @@
+# Output products list for <ram_image>
+ram_image.asy
+ram_image.mif
+ram_image.ngc
+ram_image.sym
+ram_image.v
+ram_image.veo
+ram_image.vhd
+ram_image.vho
+ram_image.xco
+ram_image_flist.txt
+ram_image_xmdf.tcl

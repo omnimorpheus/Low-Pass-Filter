@@ -1,0 +1,14 @@
+# Output products list for <font_rom>
+font_rom.asy
+font_rom.mif
+font_rom.ngc
+font_rom.sym
+font_rom.v
+font_rom.veo
+font_rom.vhd
+font_rom.vho
+font_rom.xco
+font_rom_blk_mem_gen_v2_4_xst_1_vhdl.prj
+font_rom_flist.txt
+font_rom_xmdf.tcl
+rom_unit.mif

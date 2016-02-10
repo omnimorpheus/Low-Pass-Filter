@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RootFolder label="COREGEN" treetype="folder" language="COREGEN">
+	<Folder label="VERILOG Component Instantiation" treetype="folder">
+		<Template label="font_rom" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+font_rom YourInstanceName (
+    .clka(clka),
+    .addra(addra), // Bus [6 : 0] 
+    .douta(douta)); // Bus [7 : 0] 
+
+ 
+		</Template>
+		<Template label="rom_unit" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+rom_unit YourInstanceName (
+    .clka(clka),
+    .addra(addra), // Bus [6 : 0] 
+    .douta(douta)); // Bus [7 : 0] 
+
+ 
+		</Template>
+		<Template label="font_rom2" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+font_rom2 YourInstanceName (
+    .clka(clka),
+    .dina(dina), // Bus [7 : 0] 
+    .addra(addra), // Bus [15 : 0] 
+    .wea(wea), // Bus [0 : 0] 
+    .douta(douta)); // Bus [7 : 0] 
+
+ 
+		</Template>
+		<Template label="ram_image" treetype="template">
+ 
+ 
+// The following must be inserted into your Verilog file for this
+// core to be instantiated. Change the instance name and port connections
+// (in parentheses) to your own signal names.
+ 
+ram_image YourInstanceName (
+    .addra(addra), // Bus [15 : 0] 
+    .addrb(addrb), // Bus [15 : 0] 
+    .clka(clka),
+    .clkb(clkb),
+    .dinb(dinb), // Bus [7 : 0] 
+    .douta(douta), // Bus [7 : 0] 
+    .web(web));
+
+ 
+		</Template>
+	</Folder>
+	<Folder label="VHDL Component Instantiation" treetype="folder">
+		<Template label="font_rom" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component font_rom
+    port (
+    clka: IN std_logic;
+    addra: IN std_logic_VECTOR(6 downto 0);
+    douta: OUT std_logic_VECTOR(7 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : font_rom
+        port map (
+            clka =&gt; clka,
+            addra =&gt; addra,
+            douta =&gt; douta);
+ 
+		</Template>
+		<Template label="rom_unit" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component rom_unit
+    port (
+    clka: IN std_logic;
+    addra: IN std_logic_VECTOR(6 downto 0);
+    douta: OUT std_logic_VECTOR(7 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : rom_unit
+        port map (
+            clka =&gt; clka,
+            addra =&gt; addra,
+            douta =&gt; douta);
+ 
+		</Template>
+		<Template label="font_rom2" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component font_rom2
+    port (
+    clka: IN std_logic;
+    dina: IN std_logic_VECTOR(7 downto 0);
+    addra: IN std_logic_VECTOR(15 downto 0);
+    wea: IN std_logic_VECTOR(0 downto 0);
+    douta: OUT std_logic_VECTOR(7 downto 0));
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : font_rom2
+        port map (
+            clka =&gt; clka,
+            dina =&gt; dina,
+            addra =&gt; addra,
+            wea =&gt; wea,
+            douta =&gt; douta);
+ 
+		</Template>
+		<Template label="ram_image" treetype="template">
+ 
+ 
+-- The following code must appear in the VHDL architecture header:
+ 
+component ram_image
+    port (
+    addra: IN std_logic_VECTOR(15 downto 0);
+    addrb: IN std_logic_VECTOR(15 downto 0);
+    clka: IN std_logic;
+    clkb: IN std_logic;
+    dinb: IN std_logic_VECTOR(7 downto 0);
+    douta: OUT std_logic_VECTOR(7 downto 0);
+    web: IN std_logic);
+end component;
+
+
+ 
+-------------------------------------------------------------
+ 
+-- The following code must appear in the VHDL architecture body.
+-- Substitute your own instance name and net names.
+ 
+your_instance_name : ram_image
+        port map (
+            addra =&gt; addra,
+            addrb =&gt; addrb,
+            clka =&gt; clka,
+            clkb =&gt; clkb,
+            dinb =&gt; dinb,
+            douta =&gt; douta,
+            web =&gt; web);
+ 
+		</Template>
+	</Folder>
+</RootFolder>

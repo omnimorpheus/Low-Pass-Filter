@@ -1,0 +1,8 @@
+MO keyb NULL keyb.v vlg5B/keyb.bin 1449866941
+MO mylab4 NULL mylab4.v vlg4D/mylab4.bin 1449866719
+MO mylab5 NULL mylab5.v vlg4E/mylab5.bin 1449866941
+MO vga NULL vga.v vlg6A/vga.bin 1449866941
+MO rom_unit NULL rom_unit.v vlg51/rom__unit.bin 1449419691
+MO font_rom NULL ../lab4/font_rom.v vlg6C/font__rom.bin 1449059785
+MO ram_image NULL ./ram_image.v vlg32/ram__image.bin 1449866941
+MO font_rom2 NULL ./font_rom2.v vlg4E/font__rom2.bin 1449069415

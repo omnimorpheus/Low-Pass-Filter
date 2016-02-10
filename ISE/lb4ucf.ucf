@@ -1,0 +1,36 @@
+#----------------------KEYBOARD-------------------------
+NET "kb_clock" LOC = "AG2";
+NET "data" LOC = "AG1";
+
+#----------------------VGA------------------------------
+NET "clk" LOC = "AJ15";
+NET "reset" LOC = "AG5";
+NET "hs" LOC = "B8";
+NET "vs" LOC = "D11";
+NET "blnk" LOC = "A8";
+NET "cs" LOC = "G12";
+NET "pclk" LOC = "H12";
+NET "rd[7]" LOC = "H10";
+NET "rd[6]" LOC = "C7";
+NET "rd[5]" LOC = "D7";
+NET "rd[4]" LOC = "F10";
+NET "rd[3]" LOC = "F9"; 
+NET "rd[2]" LOC = "G9";
+NET "rd[1]" LOC = "H9";
+NET "rd[0]" LOC = "G8";
+NET "gr[7]" LOC = "E11";
+NET "gr[6]" LOC = "G11";
+NET "gr[5]" LOC = "H11";
+NET "gr[4]" LOC = "C8";
+NET "gr[3]" LOC = "D8";
+NET "gr[2]" LOC = "D10";
+NET "gr[1]" LOC = "E10";
+NET "gr[0]" LOC = "G10";
+NET "bl[7]" LOC = "E14";
+NET "bl[6]" LOC = "D14";
+NET "bl[5]" LOC = "D13";
+NET "bl[4]" LOC = "C13";
+NET "bl[3]" LOC = "J15";
+NET "bl[2]" LOC = "H15";
+NET "bl[1]" LOC = "E15";
+NET "bl[0]" LOC = "D15";

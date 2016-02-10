@@ -1,0 +1,2 @@
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab5.xst -ofn mylab5.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab5.xst -ofn mylab5.syr

@@ -1,0 +1,680 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.09 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.09 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: mylab4.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mylab4.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mylab4"
+Output Format                      : NGC
+Target Device                      : xc2vp30-7-ff896
+
+---- Source Options
+Top Module Name                    : mylab4
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Convert Tristates To Logic         : Yes
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : mylab4.lso
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "./ram_image.v" in library work
+Compiling verilog file "vga.v" in library work
+Module <ram_image> compiled
+Compiling verilog file "keyb.v" in library work
+Module <vga> compiled
+Compiling verilog file "mylab4.v" in library work
+Module <keyb> compiled
+Module <mylab4> compiled
+No errors in compilation
+Analysis of file <"mylab4.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <mylab4> in library <work>.
+
+Analyzing hierarchy for module <keyb> in library <work>.
+
+Analyzing hierarchy for module <vga> in library <work> with parameters.
+	a = "00000000000000000000001100100000"
+	b = "00000000000000000000000001100000"
+	c = "00000000000000000000000000110000"
+	d = "00000000000000000000001010000000"
+	e = "00000000000000000000000000010010"
+	o = "00000000000000000000001000001101"
+	p = "00000000000000000000000000000010"
+	q = "00000000000000000000000000100001"
+	r = "00000000000000000000000111100000"
+	s = "00000000000000000000000000001010"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <mylab4>.
+Module <mylab4> is correct for synthesis.
+ 
+Analyzing module <keyb> in library <work>.
+Module <keyb> is correct for synthesis.
+ 
+Analyzing module <vga> in library <work>.
+	a = 32'sb00000000000000000000001100100000
+	b = 32'sb00000000000000000000000001100000
+	c = 32'sb00000000000000000000000000110000
+	d = 32'sb00000000000000000000001010000000
+	e = 32'sb00000000000000000000000000010010
+	o = 32'sb00000000000000000000001000001101
+	p = 32'sb00000000000000000000000000000010
+	q = 32'sb00000000000000000000000000100001
+	r = 32'sb00000000000000000000000111100000
+	s = 32'sb00000000000000000000000000001010
+Module <vga> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <keyb>.
+    Related source file is "keyb.v".
+    Found 1-bit register for signal <temp_key>.
+    Found 4-bit register for signal <char>.
+    Found 1-bit register for signal <break>.
+    Found 4-bit up counter for signal <count>.
+    Found 4-bit comparator lessequal for signal <count$cmp_le0000> created at line 63.
+    Found 8-bit register for signal <d_current>.
+    Found 8-bit register for signal <d_previous>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <keyb> synthesized.
+
+
+Synthesizing Unit <vga>.
+    Related source file is "vga.v".
+WARNING:Xst:647 - Input <reset> is never used.
+WARNING:Xst:1780 - Signal <temp1> is never used or assigned.
+WARNING:Xst:1780 - Signal <temp2> is never used or assigned.
+WARNING:Xst:646 - Signal <web0> is assigned but never used.
+WARNING:Xst:646 - Signal <web1> is assigned but never used.
+WARNING:Xst:646 - Signal <yreg<8>> is assigned but never used.
+WARNING:Xst:1780 - Signal <xz<10:8>> is never used or assigned.
+WARNING:Xst:653 - Signal <xz<7:0>> is used but never assigned. Tied to value 00000000.
+WARNING:Xst:1780 - Signal <yz<8>> is never used or assigned.
+WARNING:Xst:653 - Signal <yz<7:0>> is used but never assigned. Tied to value 00000000.
+    Register <green> equivalent to <blue> has been removed
+    Register <red> equivalent to <blue> has been removed
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <current> of Case statement line 248 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <current> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <current>.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+WARNING:Xst:2734 - Property "use_dsp48" is not applicable for this technology.
+    Found 1-bit register for signal <vsync>.
+    Found 8-bit register for signal <blue>.
+    Found 1-bit register for signal <pixel_clock>.
+    Found 1-bit register for signal <hsync>.
+    Found 10-bit comparator greatequal for signal <blue$cmp_ge0000> created at line 142.
+    Found 10-bit comparator greatequal for signal <blue$cmp_ge0001> created at line 142.
+    Found 10-bit comparator lessequal for signal <blue$cmp_le0000> created at line 142.
+    Found 10-bit comparator lessequal for signal <blue$cmp_le0001> created at line 142.
+    Found 8-bit adder for signal <cpnxt$addsub0000> created at line 352.
+    Found 16-bit register for signal <current>.
+    Found 8-bit comparator greater for signal <current$cmp_gt0000> created at line 265.
+    Found 9-bit comparator less for signal <current$cmp_lt0000> created at line 265.
+    Found 8-bit register for signal <current_pixel>.
+    Found 10-bit comparator greatequal for signal <hsync$cmp_ge0000> created at line 129.
+    Found 11-bit comparator less for signal <hsync$cmp_lt0000> created at line 129.
+    Found 10-bit up counter for signal <hsync_count>.
+    Found 11-bit comparator greatequal for signal <hsync_count$cmp_ge0000> created at line 109.
+    Found 2-bit up counter for signal <pcount>.
+    Found 8-bit adder for signal <ram_output$addsub0000> created at line 358.
+    Found 8-bit adder for signal <ram_output$addsub0001> created at line 358.
+    Found 16-bit register for signal <rom_addr>.
+    Found 16-bit adder for signal <rom_addr$add0000> created at line 90.
+    Found 12-bit register for signal <sum>.
+    Found 12-bit adder for signal <sumnxt$addsub0000> created at line 348.
+    Found 10-bit comparator greatequal for signal <vsync$cmp_ge0000> created at line 121.
+    Found 11-bit comparator less for signal <vsync$cmp_lt0000> created at line 121.
+    Found 10-bit up counter for signal <vsync_count>.
+    Found 11-bit comparator greatequal for signal <vsync_count$cmp_ge0000> created at line 114.
+    Found 8-bit register for signal <x>.
+    Found 8-bit adder for signal <xreg$add0000> created at line 170.
+    Found 8-bit subtractor for signal <xreg$addsub0000>.
+    Found 9-bit register for signal <y>.
+    Found 9-bit adder for signal <ynxt$addsub0000>.
+    Found 9-bit subtractor for signal <yreg$addsub0000>.
+    Found 8-bit adder carry out for signal <yreg$addsub0002> created at line 187.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  80 D-type flip-flop(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+Unit <vga> synthesized.
+
+
+Synthesizing Unit <mylab4>.
+    Related source file is "mylab4.v".
+Unit <mylab4> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 12-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 8-bit adder                                           : 4
+ 8-bit adder carry out                                 : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 4
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 22
+ 1-bit register                                        : 13
+ 12-bit register                                       : 1
+ 16-bit register                                       : 2
+ 4-bit register                                        : 1
+ 8-bit register                                        : 4
+ 9-bit register                                        : 1
+# Comparators                                          : 13
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator less                                : 2
+ 4-bit comparator lessequal                            : 1
+ 8-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '2vp30.nph' in environment C:\Xilinx92i.
+Reading core <ram_image.ngc>.
+Loading core <ram_image> for timing and area information for instance <image1>.
+Loading core <ram_image> for timing and area information for instance <image2>.
+WARNING:Xst:1710 - FF/Latch  <current_0> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:2677 - Node <char_1> of sequential type is unconnected in block <KeyboardInterface_unit>.
+WARNING:Xst:2677 - Node <char_2> of sequential type is unconnected in block <KeyboardInterface_unit>.
+WARNING:Xst:2677 - Node <char_3> of sequential type is unconnected in block <KeyboardInterface_unit>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 12-bit adder                                          : 1
+ 16-bit adder                                          : 1
+ 8-bit adder                                           : 4
+ 8-bit adder carry out                                 : 1
+ 8-bit subtractor                                      : 2
+ 9-bit adder                                           : 1
+# Counters                                             : 4
+ 10-bit up counter                                     : 2
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 101
+ Flip-Flops                                            : 101
+# Comparators                                          : 13
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator lessequal                           : 2
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator less                                : 2
+ 4-bit comparator lessequal                            : 1
+ 8-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch  <rom_addr_0> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_1> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_2> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_3> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_4> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_5> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_6> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_7> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_8> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_9> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_10> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_11> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_12> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_13> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_14> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:1710 - FF/Latch  <rom_addr_15> (without init value) has a constant value of 0 in block <vga>.
+WARNING:Xst:2677 - Node <pcount_1> of sequential type is unconnected in block <vga>.
+
+Optimizing unit <mylab4> ...
+
+Optimizing unit <keyb> ...
+
+Optimizing unit <vga> ...
+WARNING:Xst:2677 - Node <KeyboardInterface_unit/char_3> of sequential type is unconnected in block <mylab4>.
+WARNING:Xst:2677 - Node <KeyboardInterface_unit/char_2> of sequential type is unconnected in block <mylab4>.
+WARNING:Xst:2677 - Node <KeyboardInterface_unit/char_1> of sequential type is unconnected in block <mylab4>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mylab4, actual ratio is 1.
+INFO:Xst:2260 - The FF/Latch <BU19> in Unit <vga_unit/image2> is equivalent to the following 7 FFs/Latches : <BU104> <BU189> <BU274> <BU359> <BU444> <BU529> <BU614> 
+INFO:Xst:2260 - The FF/Latch <BU22> in Unit <vga_unit/image2> is equivalent to the following 7 FFs/Latches : <BU107> <BU192> <BU277> <BU362> <BU447> <BU532> <BU617> 
+INFO:Xst:2260 - The FF/Latch <BU19> in Unit <vga_unit/image1> is equivalent to the following 7 FFs/Latches : <BU104> <BU189> <BU274> <BU359> <BU444> <BU529> <BU614> 
+INFO:Xst:2260 - The FF/Latch <BU22> in Unit <vga_unit/image1> is equivalent to the following 7 FFs/Latches : <BU107> <BU192> <BU277> <BU362> <BU447> <BU532> <BU617> 
+INFO:Xst:2260 - The FF/Latch <BU19> in Unit <vga_unit/image2> is equivalent to the following 7 FFs/Latches : <BU104> <BU189> <BU274> <BU359> <BU444> <BU529> <BU614> 
+INFO:Xst:2260 - The FF/Latch <BU22> in Unit <vga_unit/image2> is equivalent to the following 7 FFs/Latches : <BU107> <BU192> <BU277> <BU362> <BU447> <BU532> <BU617> 
+INFO:Xst:2260 - The FF/Latch <BU19> in Unit <vga_unit/image1> is equivalent to the following 7 FFs/Latches : <BU104> <BU189> <BU274> <BU359> <BU444> <BU529> <BU614> 
+INFO:Xst:2260 - The FF/Latch <BU22> in Unit <vga_unit/image1> is equivalent to the following 7 FFs/Latches : <BU107> <BU192> <BU277> <BU362> <BU447> <BU532> <BU617> 
+FlipFlop vga_unit/y_0 has been replicated 2 time(s)
+FlipFlop vga_unit/y_1 has been replicated 2 time(s)
+FlipFlop vga_unit/y_2 has been replicated 2 time(s)
+FlipFlop vga_unit/y_3 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <mylab4> :
+	Found 2-bit shift register for signal <vga_unit/current_12>.
+Unit <mylab4> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 113
+ Flip-Flops                                            : 113
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : mylab4.ngr
+Top Level Output File Name         : mylab4
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 33
+
+Cell Usage :
+# BELS                             : 542
+#      GND                         : 3
+#      INV                         : 5
+#      LUT1                        : 22
+#      LUT2                        : 18
+#      LUT2_D                      : 9
+#      LUT2_L                      : 3
+#      LUT3                        : 43
+#      LUT3_D                      : 2
+#      LUT3_L                      : 3
+#      LUT4                        : 321
+#      LUT4_D                      : 13
+#      LUT4_L                      : 5
+#      MUXCY                       : 29
+#      MUXF5                       : 34
+#      VCC                         : 3
+#      XORCY                       : 29
+# FlipFlops/Latches                : 146
+#      FD                          : 53
+#      FD_1                        : 1
+#      FDE                         : 42
+#      FDE_1                       : 8
+#      FDR                         : 22
+#      FDRE                        : 13
+#      FDRE_1                      : 1
+#      FDS                         : 5
+#      FDSE                        : 1
+# RAMS                             : 64
+#      RAMB16_S1_S1                : 64
+# Shift Registers                  : 1
+#      SRL16                       : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 1
+#      BUFGP                       : 2
+# IO Buffers                       : 30
+#      IBUF                        : 1
+#      OBUF                        : 29
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 2vp30ff896-7 
+
+ Number of Slices:                     241  out of  13696     1%  
+ Number of Slice Flip Flops:           146  out of  27392     0%  
+ Number of 4 input LUTs:               445  out of  27392     1%  
+    Number used as logic:              444
+    Number used as Shift registers:      1
+ Number of IOs:                         33
+ Number of bonded IOBs:                 32  out of    556     5%  
+ Number of BRAMs:                       64  out of    136    47%  
+ Number of GCLKs:                        3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                    | Load  |
+-----------------------------------+------------------------------------------+-------+
+kb_clock                           | BUFGP                                    | 14    |
+KeyboardInterface_unit/break       | NONE(KeyboardInterface_unit/d_previous_2)| 9     |
+vga_unit/pixel_clock1              | BUFG                                     | 186   |
+clk                                | BUFGP                                    | 2     |
+-----------------------------------+------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -7
+
+   Minimum period: 6.291ns (Maximum Frequency: 158.960MHz)
+   Minimum input arrival time before clock: 1.564ns
+   Maximum output required time after clock: 3.359ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'kb_clock'
+  Clock period: 2.353ns (frequency: 424.962MHz)
+  Total number of paths / destination ports: 84 / 22
+-------------------------------------------------------------------------
+Delay:               2.353ns (Levels of Logic = 1)
+  Source:            KeyboardInterface_unit/count_0 (FF)
+  Destination:       KeyboardInterface_unit/count_3 (FF)
+  Source Clock:      kb_clock falling
+  Destination Clock: kb_clock falling
+
+  Data Path: KeyboardInterface_unit/count_0 to KeyboardInterface_unit/count_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q            15   0.370   0.759  KeyboardInterface_unit/count_0 (KeyboardInterface_unit/count_0)
+     LUT4:I0->O            4   0.275   0.413  KeyboardInterface_unit/count_and00001 (KeyboardInterface_unit/count_and0000)
+     FDSE:S                    0.536          KeyboardInterface_unit/count_0
+    ----------------------------------------
+    Total                      2.353ns (1.181ns logic, 1.172ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'KeyboardInterface_unit/break'
+  Clock period: 2.773ns (frequency: 360.627MHz)
+  Total number of paths / destination ports: 12 / 1
+-------------------------------------------------------------------------
+Delay:               2.773ns (Levels of Logic = 3)
+  Source:            KeyboardInterface_unit/d_previous_3 (FF)
+  Destination:       KeyboardInterface_unit/char_0 (FF)
+  Source Clock:      KeyboardInterface_unit/break rising
+  Destination Clock: KeyboardInterface_unit/break rising
+
+  Data Path: KeyboardInterface_unit/d_previous_3 to KeyboardInterface_unit/char_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.370   0.533  KeyboardInterface_unit/d_previous_3 (KeyboardInterface_unit/d_previous_3)
+     LUT4:I0->O            1   0.275   0.370  KeyboardInterface_unit/char_mux0000<3>47 (KeyboardInterface_unit/char_mux0000<3>_map17)
+     LUT4:I3->O            1   0.275   0.468  KeyboardInterface_unit/char_mux0000<3>93_SW1 (N1082)
+     LUT3:I0->O            1   0.275   0.000  KeyboardInterface_unit/char_mux0000<3>93 (KeyboardInterface_unit/char_mux0000<3>)
+     FDE:D                     0.208          KeyboardInterface_unit/char_0
+    ----------------------------------------
+    Total                      2.773ns (1.403ns logic, 1.370ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'vga_unit/pixel_clock1'
+  Clock period: 6.291ns (frequency: 158.960MHz)
+  Total number of paths / destination ports: 57882 / 2213
+-------------------------------------------------------------------------
+Delay:               6.291ns (Levels of Logic = 7)
+  Source:            vga_unit/current_pixel_3 (FF)
+  Destination:       vga_unit/image2/B6 (RAM)
+  Source Clock:      vga_unit/pixel_clock1 rising
+  Destination Clock: vga_unit/pixel_clock1 rising
+
+  Data Path: vga_unit/current_pixel_3 to vga_unit/image2/B6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              13   0.370   0.658  vga_unit/current_pixel_3 (vga_unit/current_pixel_3)
+     LUT4_D:I0->O          9   0.275   0.597  vga_unit/yreg_or00001 (vga_unit/yreg_or0000)
+     LUT2:I1->O            6   0.275   0.581  vga_unit/yreg<1>11 (vga_unit/N9)
+     LUT4:I0->O            1   0.275   0.349  vga_unit/yreg<6>25 (vga_unit/yreg<6>_map9)
+     LUT4:I2->O           41   0.275   0.702  vga_unit/yreg<6>37 (vga_unit/yreg<6>)
+     LUT3:I2->O           40   0.275   0.781  vga_unit/rom_addr2<14>1 (vga_unit/rom_addr2<14>)
+     begin scope: 'vga_unit/image2'
+     LUT4:I1->O            1   0.275   0.331  BU45 (N428)
+     RAMB16_S1_S1:ENA          0.271          B6
+    ----------------------------------------
+    Total                      6.291ns (2.291ns logic, 4.000ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.581ns (frequency: 632.331MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               1.581ns (Levels of Logic = 1)
+  Source:            vga_unit/pixel_clock (FF)
+  Destination:       vga_unit/pixel_clock (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: vga_unit/pixel_clock to vga_unit/pixel_clock
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.370   0.397  vga_unit/pixel_clock (vga_unit/pixel_clock1)
+     INV:I->O              1   0.275   0.331  vga_unit/pixel_clock_not00011_INV_0 (vga_unit/pixel_clock_not0001)
+     FDE:D                     0.208          vga_unit/pixel_clock
+    ----------------------------------------
+    Total                      1.581ns (0.853ns logic, 0.728ns route)
+                                       (53.9% logic, 46.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'kb_clock'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              1.564ns (Levels of Logic = 1)
+  Source:            data (PAD)
+  Destination:       KeyboardInterface_unit/d_current_7 (FF)
+  Destination Clock: kb_clock falling
+
+  Data Path: data to KeyboardInterface_unit/d_current_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.878   0.478  data_IBUF (data_IBUF)
+     FDE_1:D                   0.208          KeyboardInterface_unit/d_current_0
+    ----------------------------------------
+    Total                      1.564ns (1.086ns logic, 0.478ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'vga_unit/pixel_clock1'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              3.359ns (Levels of Logic = 1)
+  Source:            vga_unit/blue_7 (FF)
+  Destination:       bl<7> (PAD)
+  Source Clock:      vga_unit/pixel_clock1 rising
+
+  Data Path: vga_unit/blue_7 to bl<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.370   0.397  vga_unit/blue_7 (vga_unit/blue_7)
+     OBUF:I->O                 2.592          bl_7_OBUF (bl<7>)
+    ----------------------------------------
+    Total                      3.359ns (2.962ns logic, 0.397ns route)
+                                       (88.2% logic, 11.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.359ns (Levels of Logic = 1)
+  Source:            vga_unit/pixel_clock (FF)
+  Destination:       pclk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: vga_unit/pixel_clock to pclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.370   0.397  vga_unit/pixel_clock (vga_unit/pixel_clock1)
+     OBUF:I->O                 2.592          pclk_OBUF (pclk)
+    ----------------------------------------
+    Total                      3.359ns (2.962ns logic, 0.397ns route)
+                                       (88.2% logic, 11.8% route)
+
+=========================================================================
+CPU : 18.59 / 18.69 s | Elapsed : 19.00 / 19.00 s
+ 
+--> 
+
+Total memory usage is 288796 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

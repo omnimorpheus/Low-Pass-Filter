@@ -1,0 +1,300 @@
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/lab4-2015-12-02/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Student/Downloads/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+bitgen -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -f mylab4.ut mylab4.ncd
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Student/Downloads/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+ngdbuild -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -dd _ngo -nt timestamp -uc "lb4ucf.ucf" -p xc2vp30-ff896-7 "mylab4.ngc" mylab4.ngd
+map -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -p xc2vp30-ff896-7 -cm area -pr b -k 4 -c 100 -tx off -o mylab4_map.ncd mylab4.ngd mylab4.pcf
+par -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -w -intstyle ise -ol std -t 1 mylab4_map.ncd mylab4.ncd mylab4.pcf
+trce -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -e 3 -s 7 -xml mylab4 mylab4.ncd -o mylab4.twr mylab4.pcf -ucf lb4ucf.ucf
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr
+xst -ise "C:/Users/Syed/Google Drive/fpga fall15/Lab5/new_6dec/new/new.ise" -intstyle ise -ifn mylab4.xst -ofn mylab4.syr

@@ -1,0 +1,34 @@
+Release 9.2i ngdbuild J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx92i\bin\nt\ngdbuild.exe -ise C:/Users/Syed/Google
+Drive/fpga fall15/Lab5/new_6dec/new/new.ise -intstyle ise -dd _ngo -nt timestamp
+-uc lb4ucf.ucf -p xc2vp30-ff896-7 mylab4.ngc mylab4.ngd
+
+Reading NGO file "C:/Users/Syed/Google Drive/fpga
+fall15/Lab5/new_6dec/new/mylab4.ngc" ...
+Loading design module "C:\Users\Syed\Google Drive\fpga
+fall15\Lab5\new_6dec\new/ram_image.ngc"...
+
+Applying constraints in "lb4ucf.ucf" to the design...
+
+Checking timing specifications ...
+Checking Partitions ...
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 128420 kilobytes
+
+Writing NGD file "mylab4.ngd" ...
+
+Writing NGDBUILD log file "mylab4.bld"...
